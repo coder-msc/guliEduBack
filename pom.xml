@@ -5,11 +5,7 @@
     <modules>
         <module>service</module>
         <module>common</module>
-        <module>service_base</module>
-        <module>service_base</module>
-        <module>test</module>
-        <module>common_utils</module>
-    </modules>
+          </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

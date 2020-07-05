@@ -71,7 +71,26 @@ public class EduTeacherController {
         map.put("rows", records);
         return R.ok().data(map);
     }
+    /*
+    根据Id查询讲师信息
+         */
+    @ApiOperation("根据Id查询教师去修改信息")
+    @GetMapping("getTeacherInfo/{id}")
+public R getTeacherbyId(@PathVariable String id){
+    EduTeacher eduTeacher = teacherService.getById(id);
+    return  R.ok().data("teacher",eduTeacher);
 
+}
+    //讲师修改功能
+    @PostMapping("updateTeacher")
+    public R updateTeacher(@RequestBody EduTeacher eduTeacher) {
+        boolean flag = teacherService.updateById(eduTeacher);
+        if(flag) {
+            return R.ok();
+        } else {
+            return R.error();
+        }
+    }
     /**
      * 带分页的条件查询
      */
