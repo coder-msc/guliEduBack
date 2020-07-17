@@ -3,6 +3,7 @@ package com.atguigu.eduservice.controller;
 
 import com.atguigu.commonutils.R;
 import com.atguigu.eduservice.entity.vo.CourseInfoVo;
+import com.atguigu.eduservice.entity.vo.CoursePulishVo;
 import com.atguigu.eduservice.service.EduCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -44,5 +45,13 @@ public class EduCourseController {
         educourseservice.updateCourseInfo(courseInfoVo);
         return R.ok();
     }
+
+    //根据课程Id查询课程确认信息
+    @GetMapping("getPublishCourseInfo/{id}")
+    public  R getPublishCourseInfo(@PathVariable String id){
+        CoursePulishVo coursepublishVO= educourseservice.publishCourseInfo(id);
+        return R.ok().data("publishCourse",coursepublishVO);
+    }
+
 }
 

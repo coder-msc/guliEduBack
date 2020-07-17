@@ -2,4 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.eduservice.mapper.EduCourseMapper">
 
+    <select id="getPublishCourseInfo"  resultType="com.atguigu.eduservice.entity.vo.CoursePulishVo">
+        SELECT ec.id,ec.`title`,ec.cover,ec.`price`,ec.`lesson_num` AS lessonNum,
+        ecd.`description`,et.`name` AS teacherName,
+        es1.title AS subjectLevelOne ,
+        es2.title AS subjectLevelTwo
+        FROM edu_course ec LEFT JOIN `edu_course_description` ecd ON ec.id=ecd.`id`
+                    LEFT JOIN `edu_teacher` et ON ec.teacher_id=et.`id`
+                    LEFT JOIN `edu_subject` es1 ON es1.id=ec.`subject_parent_id`
+                    LEFT JOIN edu_subject es2 ON es2.id=ec.`subject_id`
+
+                    WHERE ec.id=#{courseId}
+
+    </select>
 </mapper>
