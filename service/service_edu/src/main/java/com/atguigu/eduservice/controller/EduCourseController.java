@@ -73,6 +73,12 @@ public class EduCourseController {
         map.put("rows", records);
         return R.ok().data(map);
     }
+    @DeleteMapping("deleteCourse/{courseId}")
+    public  R deleteCourse(@PathVariable String courseId){
+        educourseservice.deleteCourseByCourseId(courseId);
+
+        return R.ok();
+    }
 
     @PostMapping("addCourseInfo")
     public R addCourse(@RequestBody CourseInfoVo courseInfovo){
