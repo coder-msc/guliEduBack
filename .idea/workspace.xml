@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d65341-9577-46fd-b37d-b9ae4ccbb9e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service_vod/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/VOD_upload_mylib/aliyun-java-vod-upload-1.4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_vod/upload依赖引入.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\VOD_upload_mylib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\resources" />
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_edu\src\test\java\com\atguigu\demo" />
@@ -154,7 +152,7 @@
       <workItem from="1593957972386" duration="16444000" />
       <workItem from="1594218856615" duration="44429000" />
       <workItem from="1594997900675" duration="8226000" />
-      <workItem from="1595121120320" duration="12752000" />
+      <workItem from="1595121120320" duration="13068000" />
     </task>
     <task id="LOCAL-00001" summary="添加路由">
       <created>1593707627542</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595170108629</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="【代码添加】视频点播功能创建module，引入依赖">
+      <created>1595176750594</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595176750594</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +287,8 @@
     <MESSAGE value="【代码添加】课程信息确认" />
     <MESSAGE value="【代码添加】课程列表，带分页查询，条件查询" />
     <MESSAGE value="【代码添加】课程删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】课程删除" />
+    <MESSAGE value="【代码添加】视频点播功能创建module，引入依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】视频点播功能创建module，引入依赖" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="114" key="#Notifications" timestamp="1594309947795">
@@ -301,10 +307,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="487" y="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.40.1536.824@0.40.1536.824" timestamp="1595001541820" />
-    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1595170105853">
+    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1595176748589">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1595170105853" />
+    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1595176748589" />
     <state x="93" y="133" width="1350" height="638" key="DiffContextDialog" timestamp="1594572236022">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
