@@ -3,12 +3,17 @@ package com.atguigu.vod.service.impl;
 import com.aliyun.vod.upload.impl.UploadVideoImpl;
 import com.aliyun.vod.upload.req.UploadStreamRequest;
 import com.aliyun.vod.upload.resp.UploadStreamResponse;
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.profile.DefaultProfile;
+import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.atguigu.vod.service.VodService;
 import com.atguigu.vod.utils.ConstantVodUtils;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
+import java.util.List;
 
 @Service
 public class VodServiceImpl implements VodService {
@@ -42,5 +47,22 @@ public class VodServiceImpl implements VodService {
             return null;
         }
 
+    }
+
+    @Override
+    public void deleteVideoList(List<String> videoList) {
+        String regionId = "cn-shanghai";  // 点播服务接入区域
+        DefaultProfile profile = DefaultProfile.getProfile(regionId, ConstantVodUtils.ACCESS_KEY_ID, ConstantVodUtils.ACCESS_KEY_SECRET);
+        DefaultAcsClient client = new DefaultAcsClient(profile);
+
+        try {
+            DeleteVideoRequest request = new DeleteVideoRequest();
+            String videoIds = StringUtils.join(videoList.toArray(), ",");
+            //支持传入多个视频ID，多个用逗号分隔
+            request.setVideoIds(videoIds);
+            client.getAcsResponse(request);
+        } catch (Exception e) {
+            System.out.print("ErrorMessage = " + e.getLocalizedMessage());
+        }
     }
 }
