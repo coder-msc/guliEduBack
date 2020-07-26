@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d65341-9577-46fd-b37d-b9ae4ccbb9e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/client/VodClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/CmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/controller/BannerAdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/controller/BannerFrontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/entity/CrmBanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/mapper/CrmBannerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/mapper/xml/CrmBannerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/service/CrmBannerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/service/impl/CrmBannerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_cms/src/test/java/coderdemo/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/EduApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/EduApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/controller/EduVideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/controller/EduVideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/service/impl/EduVideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/service/impl/EduVideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/atguigu/eduservice/EduApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/atguigu/eduservice/EduApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/VodApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/VodApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/controller/VodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/controller/VodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/service/VodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/service/VodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/service/impl/VodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/service/impl/VodServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,9 +79,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\VOD_upload_mylib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\controller" />
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\service\impl" />
@@ -89,8 +86,31 @@
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\resources" />
       <recent name="K:\myapplicationIDEA\guli_arent\service\service_edu\src\test\java\com\atguigu\demo" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.educms.controller" />
+      <recent name="coderdemo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\VOD_upload_mylib" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduApplication">
+  <component name="RunManager" selected="JUnit.CodeGenerator.run (1)">
+    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_cms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coderdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="coderdemo" />
+      <option name="MAIN_CLASS_NAME" value="coderdemo.CodeGenerator" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service_edu" />
       <extension name="coverage">
@@ -148,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CodeGenerator.run (1)" />
         <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="Spring Boot.VodApplication" />
         <item itemvalue="Spring Boot.OssApplication" />
@@ -182,7 +203,8 @@
       <workItem from="1593957972386" duration="16444000" />
       <workItem from="1594218856615" duration="44429000" />
       <workItem from="1594997900675" duration="8226000" />
-      <workItem from="1595121120320" duration="28165000" />
+      <workItem from="1595121120320" duration="28914000" />
+      <workItem from="1595515456481" duration="2154000" />
     </task>
     <task id="LOCAL-00001" summary="添加路由">
       <created>1593707627542</created>
@@ -289,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595261174256</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="【代码添加】删除课程时，批量删除视频，调用微服务">
+      <created>1595434201068</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1595434201068</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,17 +362,18 @@
     <MESSAGE value="【代码添加】课程删除" />
     <MESSAGE value="【代码添加】视频点播功能创建module，引入依赖" />
     <MESSAGE value="【代码添加】视频点播功能视频上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】视频点播功能视频上传" />
+    <MESSAGE value="【代码添加】删除课程时，批量删除视频，调用微服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】删除课程时，批量删除视频，调用微服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="114" key="#Notifications" timestamp="1594309947795">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="361" y="114" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1594309947795" />
-    <state x="361" y="114" key="#Project_Structure" timestamp="1595177093324">
+    <state x="361" y="114" key="#Project_Structure" timestamp="1595777581788">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="361" y="114" key="#Project_Structure/0.40.1536.824@0.40.1536.824" timestamp="1595177093324" />
+    <state x="361" y="114" key="#Project_Structure/0.40.1536.824@0.40.1536.824" timestamp="1595777581788" />
     <state x="454" y="303" width="792" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1595430510971">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -356,10 +386,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="487" y="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.40.1536.824@0.40.1536.824" timestamp="1595001541820" />
-    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1595261169332">
+    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1595434192789">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1595261169332" />
+    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1595434192789" />
     <state width="435" height="466" key="DebuggerActiveHint" timestamp="1595433610133">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -373,84 +403,84 @@
     </state>
     <state x="592" y="260" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1593613673245" />
     <state x="740" y="318" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1592582762280" />
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1595433890135">
+    <state width="1493" height="187" key="GridCell.Tab.0.bottom" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595433890135" />
+    <state width="1493" height="187" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1595433890134">
+    <state width="1493" height="187" key="GridCell.Tab.0.center" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="351" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1595433890134" />
+    <state width="1493" height="187" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1595433890134">
+    <state width="1493" height="187" key="GridCell.Tab.0.left" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="351" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1595433890134" />
+    <state width="1493" height="187" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383542" />
-    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1595433890135">
+    <state width="1493" height="187" key="GridCell.Tab.0.right" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="351" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1595433890135" />
+    <state width="1493" height="187" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.1.bottom" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.1.bottom" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="351" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
+    <state width="1493" height="187" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.1.center" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.1.center" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="351" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
+    <state width="1493" height="187" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.1.left" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.1.left" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="351" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
+    <state width="1493" height="187" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.1.right" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.1.right" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="351" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
+    <state width="1493" height="187" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state width="1877" height="163" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="351" key="GridCell.Tab.2.bottom" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.2.bottom" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.2.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
-    <state width="1493" height="351" key="GridCell.Tab.2.center" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.2.bottom/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
+    <state width="1493" height="187" key="GridCell.Tab.2.center" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.2.center/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
-    <state width="1493" height="351" key="GridCell.Tab.2.left" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.2.center/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
+    <state width="1493" height="187" key="GridCell.Tab.2.left" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.2.left/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
-    <state width="1493" height="351" key="GridCell.Tab.2.right" timestamp="1595433889695">
+    <state width="1493" height="187" key="GridCell.Tab.2.left/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
+    <state width="1493" height="187" key="GridCell.Tab.2.right" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.2.right/0.40.1536.824@0.40.1536.824" timestamp="1595433889695" />
+    <state width="1493" height="187" key="GridCell.Tab.2.right/0.40.1536.824@0.40.1536.824" timestamp="1595434665042" />
     <state x="118" y="87" key="SettingsEditor" timestamp="1593918385031">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592620144756" />
     <state x="118" y="87" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1593918385031" />
     <state x="463" y="205" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1592582927907" />
-    <state x="361" y="188" key="Vcs.Push.Dialog.v2" timestamp="1595428452109">
+    <state x="361" y="188" key="Vcs.Push.Dialog.v2" timestamp="1595434277801">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="361" y="188" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1595428452109" />
+    <state x="361" y="188" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1595434277801" />
     <state x="457" y="92" width="621" height="720" key="find.popup" timestamp="1593944249274">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -459,10 +489,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="475" y="254" key="git4idea.merge.GitPullDialog/0.40.1536.824@0.40.1536.824" timestamp="1593614019325" />
-    <state x="267" y="220" key="new project wizard" timestamp="1595175054160">
+    <state x="189" y="126" key="new project wizard" timestamp="1595777181983">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="267" y="220" key="new project wizard/0.40.1536.824@0.40.1536.824" timestamp="1595175054160" />
+    <state x="189" y="126" key="new project wizard/0.40.1536.824@0.40.1536.824" timestamp="1595777181983" />
     <state x="334" y="267" key="new project wizard/0.40.1920.1040@0.40.1920.1040" timestamp="1592646683990" />
     <state x="632" y="318" width="747" height="457" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1592620143784">
       <screen x="0" y="0" width="1920" height="1040" />
