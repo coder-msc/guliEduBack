@@ -3,6 +3,8 @@ package com.atguigu.educms.service;
 import com.atguigu.educms.entity.CrmBanner;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 首页banner表 服务类
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CrmBannerService extends IService<CrmBanner> {
 
+    //显示到前台页面中
+    List<CrmBanner> getAllBanner();
 }
