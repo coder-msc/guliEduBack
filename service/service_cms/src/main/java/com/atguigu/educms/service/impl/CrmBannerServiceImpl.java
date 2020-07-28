@@ -3,9 +3,11 @@ package com.atguigu.educms.service.impl;
 import com.atguigu.educms.entity.CrmBanner;
 import com.atguigu.educms.mapper.CrmBannerMapper;
 import com.atguigu.educms.service.CrmBannerService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import javax.management.Query;
 import java.util.List;
 
 /**
@@ -21,6 +23,9 @@ public class CrmBannerServiceImpl extends ServiceImpl<CrmBannerMapper, CrmBanner
 
     @Override
     public List<CrmBanner> getAllBanner() {
+        QueryWrapper<CrmBanner> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("id");
+        queryWrapper.last("LIMIt 2");
         List<CrmBanner> crmBanners = baseMapper.selectList(null);
 
         return crmBanners ;

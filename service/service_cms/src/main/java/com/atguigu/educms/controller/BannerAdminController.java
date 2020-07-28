@@ -23,7 +23,7 @@ import java.util.Map;
  * @since 2020-07-26
  */
 @RestController
-@RequestMapping("/eduscms/crmbanner")
+@RequestMapping("/educms/crmbanner")
 @CrossOrigin
 public class BannerAdminController {
 
