@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4d65341-9577-46fd-b37d-b9ae4ccbb9e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/atguigu/servicebase/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/service/RedisPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/service/impl/RedisPageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/atguigu/commonutils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/MsmApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/controller/MsmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/service/Impl/MsmServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/service/MsmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/utils/RandomUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common_utils/common_utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_utils/common_utils.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common_utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_utils/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/service/impl/CrmBannerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/atguigu/educms/service/impl/CrmBannerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/controller/front/IndexFrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/atguigu/eduservice/controller/front/IndexFrontController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,29 +74,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_vod/src/main/java/com/atguigu/vod/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_msm/src/main/java/com/atguigu/msmservice/utils" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\controller" />
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\service\impl" />
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\service" />
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\resources" />
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_edu\src\test\java\com\atguigu\demo" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\VOD_upload_mylib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.educms.controller" />
       <recent name="coderdemo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\VOD_upload_mylib" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_msm\src\main\java\com\atguigu\msmservice\utils" />
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_msm\src\main\java\com\atguigu\msmservice\service" />
+      <recent name="K:\myapplicationIDEA\guli_arent\common\common_utils\src\main\java\com\atguigu\commonutils" />
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\controller" />
+      <recent name="K:\myapplicationIDEA\guli_arent\service\service_vod\src\main\java\com\atguigu\vod\service\impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduApplication">
+  <component name="RunManager" selected="Spring Boot.MsmApplication">
     <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service_cms" />
       <extension name="coverage">
@@ -135,15 +139,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service_oss" />
+    <configuration name="MsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_msm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.oss.*" />
+          <option name="PATTERN" value="com.atguigu.msmservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.oss.OssApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.msmservice.MsmApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MsmApplication" />
         <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="Spring Boot.CmsApplication" />
         <item itemvalue="JUnit.CodeGenerator.run (1)" />
         <item itemvalue="Spring Boot.VodApplication" />
-        <item itemvalue="Spring Boot.OssApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +203,8 @@
       <workItem from="1594218856615" duration="44429000" />
       <workItem from="1594997900675" duration="8226000" />
       <workItem from="1595121120320" duration="28914000" />
-      <workItem from="1595515456481" duration="14890000" />
+      <workItem from="1595515456481" duration="15138000" />
+      <workItem from="1596121174371" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="添加路由">
       <created>1593707627542</created>
@@ -334,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595953735994</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="【代码添加】使用Redis展示首页推荐课程推荐讲师">
+      <created>1596041114668</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1596041114668</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +394,8 @@
     <MESSAGE value="【代码添加】轮播图创建工程" />
     <MESSAGE value="【代码添加】轮播图显示与修改操作-后端代码" />
     <MESSAGE value="【代码添加】推荐课程推荐讲师" />
-    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】推荐课程推荐讲师" />
+    <MESSAGE value="【代码添加】使用Redis展示首页推荐课程推荐讲师" />
+    <option name="LAST_COMMIT_MESSAGE" value="【代码添加】使用Redis展示首页推荐课程推荐讲师" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="114" key="#Notifications" timestamp="1594309947795">
@@ -393,10 +406,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="361" y="114" key="#Project_Structure/0.40.1536.824@0.40.1536.824" timestamp="1595777581788" />
-    <state x="454" y="303" width="792" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596040366739">
+    <state x="454" y="303" width="792" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1596124085903">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="454" y="303" width="792" height="561" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1596040366739" />
+    <state x="454" y="303" width="792" height="561" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824@0.40.1536.824" timestamp="1596124085903" />
     <state x="650" y="160" key="#xdebugger.evaluate" timestamp="1595433710723">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -405,10 +418,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="487" y="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.40.1536.824@0.40.1536.824" timestamp="1595001541820" />
-    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1595953729300">
+    <state x="354" y="48" key="CommitChangelistDialog2" timestamp="1596041104171">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1595953729300" />
+    <state x="354" y="48" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1596041104171" />
     <state width="435" height="466" key="DebuggerActiveHint" timestamp="1595433610133">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -422,57 +435,57 @@
     </state>
     <state x="592" y="260" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1593613673245" />
     <state x="740" y="318" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1592582762280" />
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.0.center" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="288" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.0.left" timestamp="1596041223798">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="288" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1596041223798" />
     <state width="1877" height="163" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383542" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.0.right" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
     <state width="1877" height="240" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592645108345" />
-    <state width="1493" height="288" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1596040978048">
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom" timestamp="1596041223800">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1596040978048" />
+    <state width="1493" height="288" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1596041223800" />
     <state width="1877" height="163" key="GridCell.Tab.1.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.1.center" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="288" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.1.center/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.1.left" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="288" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.1.left/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1596040978047">
+    <state width="1493" height="288" key="GridCell.Tab.1.right" timestamp="1596041223799">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="198" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594397562294" />
-    <state width="1493" height="288" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1596040978047" />
+    <state width="1493" height="288" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1596041223799" />
     <state width="1877" height="163" key="GridCell.Tab.1.right/0.40.1920.1040@0.40.1920.1040" timestamp="1592646383543" />
     <state width="1493" height="187" key="GridCell.Tab.2.bottom" timestamp="1595434665042">
       <screen x="0" y="40" width="1536" height="824" />
@@ -496,10 +509,10 @@
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592620144756" />
     <state x="118" y="87" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1593918385031" />
     <state x="463" y="205" key="SettingsEditor/0.40.1920.1040@0.40.1920.1040" timestamp="1592582927907" />
-    <state x="361" y="188" key="Vcs.Push.Dialog.v2" timestamp="1595953773187">
+    <state x="361" y="188" key="Vcs.Push.Dialog.v2" timestamp="1596041170361">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="361" y="188" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1595953773187" />
+    <state x="361" y="188" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1596041170361" />
     <state x="564" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595950707813">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -512,10 +525,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="475" y="254" key="git4idea.merge.GitPullDialog/0.40.1536.824@0.40.1536.824" timestamp="1593614019325" />
-    <state x="189" y="126" key="new project wizard" timestamp="1595777181983">
+    <state x="189" y="126" key="new project wizard" timestamp="1596123518067">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="189" y="126" key="new project wizard/0.40.1536.824@0.40.1536.824" timestamp="1595777181983" />
+    <state x="189" y="126" key="new project wizard/0.40.1536.824@0.40.1536.824" timestamp="1596123518067" />
     <state x="334" y="267" key="new project wizard/0.40.1920.1040@0.40.1920.1040" timestamp="1592646683990" />
     <state x="632" y="318" width="747" height="457" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1592620143784">
       <screen x="0" y="0" width="1920" height="1040" />
