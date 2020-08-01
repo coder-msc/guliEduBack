@@ -1,12 +1,15 @@
 package com.atguigu.educenter.controller;
 
 
+import com.atguigu.commonutils.JwtUtils;
 import com.atguigu.commonutils.R;
 import com.atguigu.educenter.entity.UcenterMember;
 import com.atguigu.educenter.entity.vo.RegisterVo;
 import com.atguigu.educenter.service.UcenterMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  *
@@ -36,6 +39,13 @@ public class UcenterMemberController {
     public R registerUser(@RequestBody RegisterVo registerVo) {
         userService.register(registerVo);
         return R.ok();
+    }
+    /**获取到用户信息，根据token*/
+    @GetMapping("getmemberinfo")
+    public R getmemberInfo(HttpServletRequest request){
+        String memberId = JwtUtils.getMemberIdByJwtToken(request);
+        UcenterMember ucenterMember = userService.getById(memberId);
+        return R.ok().data("userInfo",ucenterMember);
     }
 }
 
