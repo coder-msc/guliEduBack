@@ -1,8 +1,11 @@
 package com.atguigu.educenter.controller;
 
+import com.atguigu.commonutils.JwtUtils;
+import com.atguigu.educenter.entity.UcenterMember;
 import com.atguigu.educenter.service.UcenterMemberService;
 import com.atguigu.educenter.utils.ConstantWxUtils;
 import com.atguigu.educenter.utils.HttpClientUtils;
+import com.atguigu.servicebase.ExcptionHandler.GuliException;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -44,35 +47,47 @@ public class WxApiController {
             //使用httpclient发送请求，得到返回结果
             String accessTokenInfo = HttpClientUtils.get(accessTokenUrl);
 
-
             Gson gson = new Gson();
             HashMap mapAccess = gson.fromJson(accessTokenInfo, HashMap.class);
             String access_token =(String) mapAccess.get("access_token");
             String openid =(String) mapAccess.get("openid");
+            //把扫描人信息添加数据库里面
+            //判断数据表里面是否存在相同微信信息，根据openid判断
+            UcenterMember member = memberService.getOpenIdMember(openid);
+            if(member == null) {//memeber是空，表没有相同微信数据，进行添加
+
 // 用以上两个值 再去获取到扫码人的基本信息
-            //访问微信的资源服务器，获取用户信息
-            String baseUserInfoUrl = "https://api.weixin.qq.com/sns/userinfo" +
-                    "?access_token=%s" +
-                    "&openid=%s";
-            //拼接两个参数
-            String userInfoUrl = String.format(
-                    baseUserInfoUrl,
-                    access_token,
-                    openid
-            );
-            //发送请求
-            String userInfo = HttpClientUtils.get(userInfoUrl);
-            //获取返回userinfo字符串扫描人信息
-            HashMap userInfoMap = gson.fromJson(userInfo, HashMap.class);
-            String nickname = (String)userInfoMap.get("nickname");//昵称
-            String headimgurl = (String)userInfoMap.get("headimgurl");//头像
+                //访问微信的资源服务器，获取用户信息
+                String baseUserInfoUrl = "https://api.weixin.qq.com/sns/userinfo" +
+                        "?access_token=%s" +
+                        "&openid=%s";
+                //拼接两个参数
+                String userInfoUrl = String.format(
+                        baseUserInfoUrl,
+                        access_token,
+                        openid
+                );
+                //发送请求
+                String userInfo = HttpClientUtils.get(userInfoUrl);
+                //获取返回userinfo字符串扫描人信息
+                HashMap userInfoMap = gson.fromJson(userInfo, HashMap.class);
+                String nickname = (String) userInfoMap.get("nickname");//昵称
+                String headimgurl = (String) userInfoMap.get("headimgurl");//头像
 
-
+                 member = new UcenterMember();
+                member = new UcenterMember();
+                member.setOpenid(openid);
+                member.setNickname(nickname);
+                member.setAvatar(headimgurl);
+                memberService.save(member);
+            }
+            //使用jwt根据member对象生成token字符串
+            String jwtToken = JwtUtils.getJwtToken(member.getId(), member.getNickname());
+            //最后：返回首页面，通过路径传递token字符串
+            return "redirect:http://localhost:3000?token="+jwtToken;
         }catch (Exception e){
-            e.printStackTrace();
+            throw new GuliException(20001,"登录失败");
         }
-
-            return "redirect:http://localhost:3000";
     }
 
     //1 生成微信扫描二维码

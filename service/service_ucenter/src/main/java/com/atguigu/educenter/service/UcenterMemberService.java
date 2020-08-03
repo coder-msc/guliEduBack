@@ -18,4 +18,6 @@ public interface UcenterMemberService extends IService<UcenterMember> {
 
     //注册的方法
     void register(RegisterVo registerVo);
+
+    UcenterMember getOpenIdMember(String openid);
 }
