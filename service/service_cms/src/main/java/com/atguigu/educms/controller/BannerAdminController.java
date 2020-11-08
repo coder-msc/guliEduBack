@@ -28,7 +28,7 @@ import java.util.Map;
 public class BannerAdminController {
 
     @Autowired
-    private CrmBannerService crmbannerservice;
+    private   CrmBannerService crmbannerservice;
 
 //展示所有的轮播图  方便改
     @GetMapping("page/{page}/{limit}")

@@ -128,7 +128,7 @@
             <version>4.12</version>
         </dependency>
     </dependencies>
-    <build>
+    <!--<build>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -138,6 +138,27 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
+    </build>-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+        <!--<plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>-->
     </build>
-
 </project>

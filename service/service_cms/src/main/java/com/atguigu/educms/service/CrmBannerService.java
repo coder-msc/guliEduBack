@@ -2,6 +2,7 @@ package com.atguigu.educms.service;
 
 import com.atguigu.educms.entity.CrmBanner;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @author testjava
  * @since 2020-07-26
  */
+//@Mapper
 public interface CrmBannerService extends IService<CrmBanner> {
 
     //显示到前台页面中

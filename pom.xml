@@ -161,8 +161,10 @@
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
-<!--                <version>${aliyun.oss.version}</version>-->
+                <version>${aliyun.oss.version}</version>
+<!--
                 <version>${aliyun-sdk-oss.version}</version>
+-->
             </dependency>
             <dependency>
                 <groupId>com.aliyun</groupId>
@@ -204,13 +206,13 @@
         </dependencies>
     </dependencyManagement>
 
-   <!-- <build>
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>-->
-
+    </build>
+-->
 </project>

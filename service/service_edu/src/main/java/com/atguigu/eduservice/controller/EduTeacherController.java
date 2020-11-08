@@ -56,11 +56,11 @@ public class EduTeacherController {
     public R getTeachersPage(@PathVariable long current,
                              @PathVariable long limit) {
 
-        try {
+      /*  try {
             int a = 10 / 0;  //测试异常的数据
         }catch (Exception e){
             throw new GuliException(20001,"执行了自定义的异常");
-        }
+        }*/
 
         Page<EduTeacher> pageTeacher = new Page<>(current, limit);
         teacherService.page(pageTeacher, null);
