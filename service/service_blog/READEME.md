@@ -1,0 +1,14 @@
+
+
+CREATE TABLE `edu_blog` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `user_id` BIGINT(20) NOT NULL,
+  `blog_tag` VARCHAR(255) NOT NULL,
+  `blog_avatar` VARCHAR(255) NOT NULL,
+  `title` VARCHAR(255) NOT NULL,
+  `description` VARCHAR(255) NOT NULL,
+  `content` LONGTEXT,
+  `created_time` DATETIME NOT NULL,
+  `status` TINYINT(4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
