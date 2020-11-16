@@ -8,11 +8,15 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Assert;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-//import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import cn.hutool.core.bean.BeanUtil;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+
 /**
  * <p>
  *  前端控制器
@@ -65,10 +69,23 @@ public class EduBlogController {
 //            temp.setCreated(LocalDateTime.now());
             temp.setStatus(0);
         }
+        blog.setUserId(1l);
+        temp.setUserId(1l);
+
 
         BeanUtil.copyProperties(blog, temp, "id", "userId", "created", "status");
+        LocalDate today = LocalDate.now();
+        temp.setBlogTag("java");
+//        temp.getCreatedTime(today);
+        temp.setCreatedTime(new Date());
+        temp.setBlogAvatar("dsfjiejf");
         blogService.saveOrUpdate(temp);
 
         return R.ok();
+    }
+
+    @RequestMapping("/bolg/url")
+    public String getUrl(){
+        return "http:localhost:8080/hello/dfh.png";
     }
 }
