@@ -84,8 +84,13 @@ public class EduBlogController {
         return R.ok();
     }
 
+//    @RequestMapping("/bolg/url")
+//    public String getUrl(){
+//        return "http:localhost:8080/hello/dfh.png";
+//    }
+
     @RequestMapping("/bolg/url")
-    public String getUrl(){
-        return "http:localhost:8080/hello/dfh.png";
+    public R getUrl(){
+        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
     }
 }
