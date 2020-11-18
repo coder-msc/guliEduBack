@@ -44,9 +44,8 @@ public class EduBlogController {
     @GetMapping("/blog/{id}")
     public R detail(@PathVariable(name = "id") Long id) {
         EduBlog blog = blogService.getById(id);
-        Assert.notNull(blog, "该博客已被删除");
-
-        return R.ok();
+//        Assert.notNull(blog, "该博客已被删除");
+        return R.ok().data("data",blog);
     }
 
 //    @RequiresAuthentication
