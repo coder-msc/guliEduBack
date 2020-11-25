@@ -1,6 +1,7 @@
 package com.atguigu.blog.controller;
 
 
+import com.atguigu.blog.client.OssClient;
 import com.atguigu.blog.entity.EduBlog;
 import com.atguigu.blog.service.EduBlogService;
 import com.atguigu.commonutils.R;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import cn.hutool.core.bean.BeanUtil;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -31,6 +33,8 @@ import java.util.Date;
 public class EduBlogController {
     @Autowired
     EduBlogService blogService;
+    @Autowired
+    OssClient ossClient;
 
     @GetMapping("/blogs")
     public R list(@RequestParam(defaultValue = "1") Integer currentPage) {
@@ -89,7 +93,9 @@ public class EduBlogController {
 //    }
 
     @RequestMapping("/bolg/url")
-    public R getUrl(){
-        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
+    public R getUrl(@RequestPart(value = "file") MultipartFile file){
+//        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
+        return ossClient.uploadossFile(file);
     }
+
 }
