@@ -30,7 +30,7 @@ public class OssServiceImpl implements OssService {
             String filename = file.getOriginalFilename();
             //确保文件不会重名被覆盖
             String uuid = UUID.randomUUID().toString().replaceAll("-", "");
-            filename=uuid+filename;
+            filename="__"+uuid+filename;
             //以时间创建文件夹
             String filepath = new DateTime().toString("yyyy/MM/dd");
             filename=filepath+filename;
