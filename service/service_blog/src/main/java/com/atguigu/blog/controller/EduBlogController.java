@@ -1,9 +1,11 @@
 package com.atguigu.blog.controller;
 
 
+import cn.hutool.core.io.FileUtil;
 import com.atguigu.blog.client.OssClient;
 import com.atguigu.blog.entity.EduBlog;
 import com.atguigu.blog.service.EduBlogService;
+import com.atguigu.blog.service.OssService;
 import com.atguigu.commonutils.R;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import cn.hutool.core.bean.BeanUtil;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -35,6 +38,9 @@ public class EduBlogController {
     EduBlogService blogService;
     @Autowired
     OssClient ossClient;
+    @Autowired
+    OssService ossService;
+
 
     @GetMapping("/blogs")
     public R list(@RequestParam(defaultValue = "1") Integer currentPage) {
@@ -81,7 +87,7 @@ public class EduBlogController {
         temp.setBlogTag("java");
 //        temp.getCreatedTime(today);
         temp.setCreatedTime(new Date());
-        temp.setBlogAvatar("dsfjiejf");
+        temp.setBlogAvatar(blog.getBlogAvatar());
         blogService.saveOrUpdate(temp);
 
         return R.ok();
@@ -93,9 +99,27 @@ public class EduBlogController {
 //    }
 
     @RequestMapping("/bolg/url")
-    public R getUrl(@RequestPart(value = "file") MultipartFile file){
+    public R getUrl(@RequestParam(value = "file") MultipartFile file){
+        System.out.println(file);
+
 //        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
         return ossClient.uploadossFile(file);
     }
-
+    @RequestMapping("/bolg/imgurl")
+    public R getImgUrl(@RequestParam(value = "image") MultipartFile image){
+        String name = image.getName();
+        boolean empty = image.isEmpty();
+        System.out.println(image);
+//        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
+//        return ossClient.uploadossFile(file);
+        String url = ossService.uploadAvatar(image);
+        return  R.ok().data("url",url);
+    }
+    //上传头像的方法
+    @PostMapping("/getgsg/geg")
+    public R uploadossFile(@RequestParam(value = "image") MultipartFile image){
+        System.out.println(image+"--------------------");
+        String url= ossService.uploadAvatar(image);
+        return R.ok().data("url",url);
+    }
 }
