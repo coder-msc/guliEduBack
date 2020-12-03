@@ -32,7 +32,7 @@ import java.util.Date;
  */
 @RestController
 @RequestMapping("/blogservice/blogs")
-@CrossOrigin
+//@CrossOrigin
 public class EduBlogController {
     @Autowired
     EduBlogService blogService;
@@ -99,11 +99,11 @@ public class EduBlogController {
 //    }
 
     @RequestMapping("/bolg/url")
-    public R getUrl(@RequestParam(value = "file") MultipartFile file){
-        System.out.println(file);
+    public R getUrl(@RequestParam(value = "image") MultipartFile image){
+        System.out.println(image);
 
 //        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
-        return ossClient.uploadossFile(file);
+        return ossClient.uploadossFile(image);
     }
     @RequestMapping("/bolg/imgurl")
     public R getImgUrl(@RequestParam(value = "image") MultipartFile image){

@@ -11,5 +11,5 @@ import org.springframework.web.multipart.MultipartFile;
 public interface OssClient {
 
     @RequestMapping(value = "/eduoss/fileoss", method = RequestMethod.POST, consumes = "multipart/form-data")
-    public R uploadossFile(MultipartFile file);
+    public R uploadossFile(MultipartFile image);
 }
