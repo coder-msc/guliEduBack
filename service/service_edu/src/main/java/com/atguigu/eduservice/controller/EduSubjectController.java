@@ -21,7 +21,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/edusubject")
-@CrossOrigin
+//@CrossOrigin
 public class EduSubjectController {
 
     @Autowired

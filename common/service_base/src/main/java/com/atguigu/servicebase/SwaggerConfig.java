@@ -24,7 +24,6 @@ public class SwaggerConfig {
                 .paths(Predicates.not(PathSelectors.regex("/admin/.*")))
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build();
-
     }
 
     private ApiInfo webApiInfo() {

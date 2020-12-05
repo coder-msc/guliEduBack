@@ -28,7 +28,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/eduservice/educourse")
-@CrossOrigin
+//@CrossOrigin
 public class EduCourseController {
 
     @Autowired

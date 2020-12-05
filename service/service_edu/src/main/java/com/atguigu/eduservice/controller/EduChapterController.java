@@ -20,7 +20,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/chapter")
-@CrossOrigin
+//@CrossOrigin
 public class EduChapterController {
 
     @Autowired

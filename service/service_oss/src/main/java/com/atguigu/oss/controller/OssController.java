@@ -3,15 +3,12 @@ package com.atguigu.oss.controller;
 import com.atguigu.commonutils.R;
 import com.atguigu.oss.service.OssService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("/eduoss/fileoss")
-@CrossOrigin
+//@CrossOrigin
 public class OssController {
 
     @Autowired
@@ -19,8 +16,9 @@ public class OssController {
 
     //上传头像的方法
     @PostMapping
-    public R uploadossFile(MultipartFile file){
-       String url= ossService.uploadAvatar(file);
+    public R uploadossFile(@RequestParam(value = "image") MultipartFile image){
+        System.out.println(image+"--------------------");
+       String url= ossService.uploadAvatar(image);
         return R.ok().data("url",url);
     }
 }
