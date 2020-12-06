@@ -101,6 +101,12 @@
             <artifactId>joda-time</artifactId>
         </dependency>
 
+        <!--nacos 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
