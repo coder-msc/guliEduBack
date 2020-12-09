@@ -41,13 +41,12 @@ public class EduBlogController {
     @Autowired
     OssService ossService;
 
-
-    @GetMapping("/blogs")
-    public R list(@RequestParam(defaultValue = "1") Integer currentPage) {
-
-        Page page = new Page(currentPage, 5);
+/**展示博客列表  前台 后台 均展示8个
+ * */
+    @GetMapping("/blogs/{currentPage}")
+    public R list(@PathVariable long currentPage) {
+        Page page = new Page(currentPage, 8);
         IPage pageData = blogService.page(page, new QueryWrapper<EduBlog>().orderByDesc("created_time"));
-
         return R.ok().data("pageData",pageData);
     }
 
@@ -97,20 +96,21 @@ public class EduBlogController {
 //    public String getUrl(){
 //        return "http:localhost:8080/hello/dfh.png";
 //    }
-
+/**上传头像方法
+ * */
     @RequestMapping("/bolg/url")
     public R getUrl(@RequestParam(value = "image") MultipartFile image){
         System.out.println(image);
-
 //        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
         return ossClient.uploadossFile(image);
     }
+    /**上传截图的方法
+     * */
     @RequestMapping("/bolg/imgurl")
     public R getImgUrl(@RequestParam(value = "image") MultipartFile image){
         String name = image.getName();
         boolean empty = image.isEmpty();
         System.out.println(image);
-//        return R.ok().data("url","http://browser9.qhimg.com/bdm/1440_900_85/t01fdcd6377a309b28b.jpg");
 //        return ossClient.uploadossFile(file);
         String url = ossService.uploadAvatar(image);
         return  R.ok().data("url",url);
