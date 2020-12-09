@@ -1,5 +1,6 @@
 package com.atguigu.blog.config;
 
+import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import feign.codec.Encoder;
 import feign.form.spring.SpringFormEncoder;
 import org.springframework.beans.factory.ObjectFactory;
@@ -20,5 +21,10 @@ public class myconfig implements WebMvcConfigurer {
         return new SpringFormEncoder(new SpringEncoder(messageConverters));
     }
 
+    //    配置分页插件
+    @Bean
+    public PaginationInterceptor paginationInterceptor() {
+        return new PaginationInterceptor();
+    }
 
 }
