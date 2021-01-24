@@ -6,6 +6,7 @@ import com.atguigu.commonutils.R;
 import com.atguigu.educenter.entity.UcenterMember;
 import com.atguigu.educenter.entity.vo.RegisterVo;
 import com.atguigu.educenter.service.UcenterMemberService;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,5 +48,15 @@ public class UcenterMemberController {
         UcenterMember ucenterMember = userService.getById(memberId);
         return R.ok().data("userInfo",ucenterMember);
     }
+
+    /**获取到用户信息，username*/
+    @GetMapping("getmemberbyusername/{username}")
+    public R getmemberByuserName(@PathVariable String username){
+        QueryWrapper<UcenterMember> wrapper = new QueryWrapper<>();
+        wrapper.eq("username",username);
+        UcenterMember ucenterMember = userService.getOne(wrapper);
+        return R.ok().data("userInfo",ucenterMember);
+    }
+
 }
 

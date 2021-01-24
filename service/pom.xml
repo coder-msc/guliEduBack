@@ -20,6 +20,7 @@
         <module>service_ucenter</module>
         <module>service_blog</module>
         <module>service_search</module>
+        <module>service_auth</module>
     </modules>
 
     <dependencies>

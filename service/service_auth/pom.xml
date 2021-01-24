@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>service</artifactId>
+        <groupId>com.atguigu</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>service_auth</artifactId>
+
+    <dependencies>
+<!--        &lt;!&ndash; 集成Common包 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.majiaxueyuan</groupId>-->
+<!--            <artifactId>majiaxueyuan-member-api</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; 集成Common包 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.majiaxueyuan</groupId>-->
+<!--            <artifactId>majiaxueyuan-common</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; 集成Eureka客户端 &ndash;&gt;-->
+
+        <!-- 认证需要的Jar包 -->
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.3.8.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-jwt</artifactId>
+            <version>1.1.0.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+</project>
