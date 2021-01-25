@@ -57,6 +57,13 @@ public class UcenterMemberController {
         UcenterMember ucenterMember = userService.getOne(wrapper);
         return R.ok().data("userInfo",ucenterMember);
     }
-
+    /**获取到用户信息，username*/
+    @GetMapping("getmembertest")
+    public R getmembertest(String username){
+//        QueryWrapper<UcenterMember> wrapper = new QueryWrapper<>();
+//        wrapper.eq("username",username);
+//        UcenterMember ucenterMember = userService.getOne(wrapper);
+        return R.ok().data("userInfo","hhdhfjehkfkje");
+    }
 }
 
