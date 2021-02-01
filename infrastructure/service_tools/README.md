@@ -85,3 +85,22 @@ GET testdb/_search
   }
 }
 ```
+自定义高亮样式
+```aidl
+
+GET testdb/_search
+{
+  "query": {
+    "match": {
+      "name": "狂"
+    }
+  },
+  "highlight": {
+    "pre_tags": "<p class='key' style='color:red'>",
+    "post_tags": "</p>" ,
+    "fields": {
+      "name": {}
+    }
+  }
+}
+```
