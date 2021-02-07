@@ -45,7 +45,7 @@ public class ESTest {
     @Test //索引的创建
     public void search() throws IOException {
         //创建索引
-        CreateIndexRequest request = new CreateIndexRequest("kuang_index");
+        CreateIndexRequest request = new CreateIndexRequest("jd_goods");
         //执行请求
         CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(request, RequestOptions.DEFAULT);
         System.out.println(createIndexResponse);
@@ -55,7 +55,7 @@ public class ESTest {
     /*测试获取索引*/
     @Test
     public void getIndex() throws IOException {
-        GetIndexRequest index = new GetIndexRequest("kuang_index");
+        GetIndexRequest index = new GetIndexRequest("jd_goods");
         boolean exists = restHighLevelClient.indices().exists(index, RequestOptions.DEFAULT);
         System.out.println(exists);
     }
