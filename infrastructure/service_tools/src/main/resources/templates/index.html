@@ -130,7 +130,7 @@
             searchPage(){
                 var keyword = this.keyword;
                 console.log(keyword)
-                axios.get("/search/"+keyword+"/1/20").then(res=>{
+                axios.get("/search/1/20"+keyword).then(res=>{
                     console.log(res.data)
                     this.results = res.data;
                 })
