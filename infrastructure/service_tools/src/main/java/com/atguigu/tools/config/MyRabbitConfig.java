@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyRabbitConfig {
 
-    @Bean
+    @Bean //MQ发送的对象 变成JSON格式
     public MessageConverter messageConverter(){
         return  new Jackson2JsonMessageConverter();
     }

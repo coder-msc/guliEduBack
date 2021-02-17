@@ -18,9 +18,7 @@ import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.common.xcontent.XContentType;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -135,11 +133,13 @@ public class ESTest {
     //查询
     @Test
     public void Testsearch() throws IOException {
-        SearchRequest searchRequest=  new SearchRequest("testdb");
+        SearchRequest searchRequest=  new SearchRequest("jd_goods");
         //构建搜索条件
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         //查询条件
-        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("name", "好");
+//        TermQueryBuilder termQueryBuilder = QueryBuilders.termQuery("description", "测试MQ");
+//        MatchAllQueryBuilder termQueryBuilder = QueryBuilders.matchAllQuery();
+        MatchQueryBuilder termQueryBuilder = QueryBuilders.matchQuery("description", "测试MQ");
 //        QueryBuilders.matchAllQuery(); // 匹配所有查询
         SearchSourceBuilder query = searchSourceBuilder.query(termQueryBuilder);
         searchSourceBuilder.timeout(new TimeValue(60, TimeUnit.SECONDS));//查询超时时间
